@@ -75,7 +75,7 @@ body{
   border: 5px solid  #5A236C;
   border-radius: 3px;
   flex-wrap: wrap;
-  width: 500px;
+  width: 565px;
   box-shadow: 0 0 30px #392270;
   /* height: 500px; */
   /* box-shadow: 0 0 30px #392270; */
@@ -84,10 +84,31 @@ body{
 .grid-container>div{
   background-color: #fff;
 }
-/* 
+
 .grid-10x10{
-  grid-template-columns: repeat(10,auto); */
-/* } */
+  grid-template-columns: repeat(10,auto); 
+}
+.grid-10x10>div{
+  border: 1px solid #ffa8d1;
+  height: 48px;
+  width: 48px;
+}
+.grid-20x20{
+  grid-template-columns: repeat(20,auto);
+}
+.grid-20x20>div{
+  border: 1px solid #ffa8d1;
+  height: 23px;
+  width: 24px;
+}
+.grid-30x30{
+  grid-template-columns: repeat(30,auto);
+}
+.grid-30x30>div{
+  border: 1px solid #ffa8d1;
+  width: 14px;
+  height: 14px;
+}
 #gridDiv{
   border: 1px solid #ffa8d1;
   height: 48px;
