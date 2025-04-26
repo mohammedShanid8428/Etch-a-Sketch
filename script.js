@@ -13,8 +13,8 @@ const container = document.querySelector('.grid-container');
 
 
 for(i=1;i<=10*10;i++){
-  const divs=document.createElement('div');
+  const gridDivs=document.createElement('div');
   divs.id='gridDiv';
-  container.append(divs)
+  container.append(gridDivs)
   
 }
