@@ -45,12 +45,26 @@ function generateColor(name, colors) {
       item.addEventListener('mouseenter', (e) => {
         e.target.style.backgroundColor = randomColors;
       });
-    } else if (name === 'black' || name === 'white') {
+    } else if (name === 'black' || name === 'Eraser') {
       item.addEventListener('mouseenter', (e) => {
         e.target.style.backgroundColor = colors;
       });
+    } else if (name === 'rainbow') {
+      item.addEventListener('mouseenter', (e) => {
+        const randomR = Math.floor(Math.random() * 256)
+        const randomG = Math.floor(Math.random() * 256)
+        const randomB = Math.floor(Math.random() * 256)
+        e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+      })
     }
   });
+}
+
+function clearAll(){
+  const clearButton=document.querySelector('.clear');
+  const gridDiv = document.createElement('div');
+  gridDiv.forEach(item=>item.style.backgroundColor=)
+
 }
 
 function chooseColor() {
@@ -67,9 +81,12 @@ function chooseColor() {
       } else if (button.classList.contains('black')) {
         colorButtons[2].classList.add('active');
         generateColor('black', '#000000');
-      } else if (button.classList.contains('white')) {
+      } else if (button.classList.contains('Eraser')) {
         colorButtons[3].classList.add('active');
         generateColor('white', '#FFFFFF');
+      } else if (button.classList.contains('rainbow')) {
+        colorButtons[4].classList.add('active');
+        generateColor('rainbow',null);
       }
     });
   });

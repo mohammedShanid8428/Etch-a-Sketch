@@ -61,6 +61,18 @@ body{
   transition: all .3s ease-in;
   
 }
+
+#circle{
+  margin-left:150px;
+  margin-right: 150px;
+}
+
+.btn{
+  padding: 35px 0px;
+  width: 130px;
+  font-size: 25px;
+  border-radius: 50%;
+}
 .active{
   box-shadow: 0 0 30px #F44D9B;
 }
