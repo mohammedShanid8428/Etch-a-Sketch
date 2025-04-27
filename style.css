@@ -173,21 +173,23 @@ body{
   }
 }
 
+
 .opaque{
   animation: opaqueButton 5s ease infinite;
 
 }
 
-@keyframes opqueButton {
+@keyframes opaqueButton {
   0%{
-    opacity: 0%;
+    opacity: 20%;
   }
   50%{
     opacity: 100%;
     color: black;
+    background-color: orange;
   }
   100%{
-    opacity: 0%;
+    opacity: 20%;
   }
   
 }
