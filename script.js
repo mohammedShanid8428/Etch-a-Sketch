@@ -62,8 +62,12 @@ function generateColor(name, colors) {
 
 function clearAll(){
   const clearButton=document.querySelector('.clear');
-  const gridDiv = document.createElement('div');
-  gridDiv.forEach(item=>item.style.backgroundColor=)
+  clearButton.addEventListener('click',()=> {
+    const gridItem = document.querySelectorAll('.grid-container > div');
+    gridItem.forEach((item)=> {
+      item.style.backgroundColor='#ffffff';
+    })
+  })
 
 }
 
@@ -72,21 +76,24 @@ function chooseColor() {
   colorButtons.forEach((button) => {
     button.addEventListener('click', () => {
       removeActiveStyle(colorButtons);
-      if (button.classList.contains('warm')) {
+      if (button.classList.contains('rainbow')) {
         colorButtons[0].classList.add('active');
+        generateColor('rainbow',null);
+      }else if (button.classList.contains('warm')) {
+        colorButtons[1].classList.add('active');
         generateColor('warm', ['#BF6A6D', '#A45256', '#EC6760', '#F88C5D', '#FDCF6D']);
       } else if (button.classList.contains('cold')) {
-        colorButtons[1].classList.add('active');
+        colorButtons[2].classList.add('active');
         generateColor('cold', ['#5590BC', '#0DABB8', '#01F0F6', '#1FFDE1', '#57FFC8']);
       } else if (button.classList.contains('black')) {
-        colorButtons[2].classList.add('active');
+        colorButtons[3].classList.add('active');
         generateColor('black', '#000000');
       } else if (button.classList.contains('Eraser')) {
-        colorButtons[3].classList.add('active');
-        generateColor('white', '#FFFFFF');
-      } else if (button.classList.contains('rainbow')) {
         colorButtons[4].classList.add('active');
-        generateColor('rainbow',null);
+        generateColor('white', '#FFFFFF');
+      } else if (button.classList.contains('clear')) {
+        colorButtons[5].classList.add('active');
+        
       }
     });
   });
@@ -94,13 +101,6 @@ function chooseColor() {
 generateGrid()
 chooseGrid()
 chooseColor()
+clearAll()
 
-// const container = document.querySelector('.grid-container');
 
-
-// for (i = 1; i <= 10 * 10; i++) {
-//   const gridDivs = document.createElement('div');
-//   gridDivs.id = 'gridDiv';
-//   container.append(gridDivs)
-
-// }
