@@ -118,12 +118,26 @@ body{
   margin-left:150px;
   margin-right: 150px;
 }
+#circled{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  /* margin: 0 100px; */
+
+}
 
 .btn{
   padding: 35px 0px;
   width: 130px;
   font-size: 25px;
   border-radius: 50%;
+}
+#btn{
+  padding: 45px 0px;
+  width: 150px;
+  border-radius: 10px;
 }
 
 .btn:hover{
@@ -133,6 +147,17 @@ body{
 .active{
   box-shadow: 2px 5px 30px #0b0130;
 }
+
+.color{
+  animation: colorButton 3s ease infinite ;
+}
+
+@keyframes colorButton{
+  0%{
+    background-color: ;
+  }
+}
+
 .container{
   margin-top: 20px;
   display: flex;
