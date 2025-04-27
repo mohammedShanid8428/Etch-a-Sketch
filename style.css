@@ -149,13 +149,47 @@ body{
 }
 
 .color{
-  animation: colorButton 3s ease infinite ;
+  animation: colorButton 8s ease infinite ;
 }
 
 @keyframes colorButton{
   0%{
-    background-color: ;
+    background-color:#ff6262;
   }
+  20%{
+    background-color:#ffef62;
+  }
+  40%{
+    background-color: #7cff62 ;
+  }
+  60%{
+    background-color:#62ffe5 ;
+  }
+  80%{
+    background-color: #6272ff ;
+  }
+  100%{
+    background-color: #ff62ff;
+  }
+}
+
+.opaque{
+  animation: opaqueButton 5s ease infinite;
+
+}
+
+@keyframes opqueButton {
+  0%{
+    opacity: 0%;
+  }
+  50%{
+    opacity: 100%;
+    color: black;
+  }
+  100%{
+    opacity: 0%;
+  }
+  
 }
 
 .container{
