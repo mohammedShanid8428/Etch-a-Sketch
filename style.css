@@ -8,15 +8,44 @@ html{
 }
 
 body{
-  background-color:#5A236C; 
-  background-image: linear-gradient(to bottom right, #392270, #E9275B);
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #e2592f, #dd1964, #0faee7, #16d861);
   text-align: center;
+  background-size: 400% 400%;
   color: #fff;
+  animation: backgroundGradient 10s ease infinite;
+}
+
+@keyframes backgroundGradient {
+  0%{
+    background-position: 0% 0%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 0%;
+  }
+  
 }
 .title{
   margin: 20px 0 20px 0;
   font-size: 4.4rem;
-  text-shadow: 0 0 13px #fff;
+  animation: titleShadow 3s ease infinite;
+}
+
+@keyframes titleShadow {
+  0%{
+    text-shadow: 1px 1px #000000;
+  }
+  50%{
+    text-shadow: 4px 4px #000000;
+  }
+  100%{
+    text-shadow: 1px 1px #000000;
+  }
+  
 }
 .option{
   display: flex;
@@ -45,16 +74,21 @@ body{
   margin: 10px;
   padding: 13px;
   width: 80px;
-  background-color: transparent;
-  color: #fff;
+  background-color: white;
+  color: #000000;
   text-shadow: 0 0 10px #fff;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0 0 10px #fff;
+  border: 3px solid black;
+  border-radius: 7px;
+  box-shadow: 0 0 15px #fff;
   cursor: pointer;
-  /* outline: 0 !important; */
+  font-size: 1rem;
+  font-weight: 700;
   transition: all .3s ease-in;
 
+}
+.rectangle:hover{
+  background-color: orange;
+  color: #fff;
 }
 
 .circle{
@@ -62,16 +96,22 @@ body{
   padding: 27px 0;
   gap: 20px;
   width: 80px;
-  background-color: transparent;
-  font-size: 22px;
-  color: #fff;
+  background-color: white;
+  font-size: 20px;
+  color: #000000;
   text-shadow: 0 0 10px #fff;
-  border: none;
+  border: 2px solid black;
   border-radius: 50%;
-  box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 15px #fff;
   cursor: pointer;
+
   transition: all .3s ease-in;
   
+}
+
+.circle:hover{
+  background-color: red;
+  color: #fff;
 }
 
 #circle{
@@ -85,8 +125,13 @@ body{
   font-size: 25px;
   border-radius: 50%;
 }
+
+.btn:hover{
+  background-color: greenyellow;
+  color: #000000;
+}
 .active{
-  box-shadow: 0 0 30px #F44D9B;
+  box-shadow: 2px 5px 30px #0b0130;
 }
 .container{
   margin-top: 20px;
@@ -96,13 +141,12 @@ body{
 
 .grid-container{
   display:flex;
-  border: 5px solid  #5A236C;
+  border: 5px solid  #000000;
   border-radius: 3px;
   flex-wrap: wrap;
   width: 500px;
-  box-shadow: 0 0 30px #392270;
-  /* height: 500px; */
-  /* box-shadow: 0 0 30px #392270; */
+  box-shadow: 0 0 30px #fff;
+
 }
 
 .grid-container>div{
