@@ -14,23 +14,31 @@ body{
   color: #fff;
 }
 .title{
-  margin: 30px 0 20px 0;
-  font-size: 5rem;
+  margin: 20px 0 20px 0;
+  font-size: 4.4rem;
   text-shadow: 0 0 13px #fff;
 }
-
 .option{
+  display: flex;
+  justify-content: center;
+}
+
+.option1{
   display: flex;
   justify-content: center;
   /* flex-wrap: wrap; */
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
-
+.grid-button{
+  display: flex;
+}
 .color-button{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .rectangle{
@@ -50,7 +58,7 @@ body{
 }
 
 .circle{
-  margin: 5px-30px;
+  margin: 5px 10px;
   padding: 27px 0;
   gap: 20px;
   width: 80px;
@@ -91,7 +99,7 @@ body{
   border: 5px solid  #5A236C;
   border-radius: 3px;
   flex-wrap: wrap;
-  width: 565px;
+  width: 500px;
   box-shadow: 0 0 30px #392270;
   /* height: 500px; */
   /* box-shadow: 0 0 30px #392270; */
@@ -105,31 +113,31 @@ body{
   grid-template-columns: repeat(10,auto); 
 }
 .grid-10x10>div{
-  border: 1px solid #ffa8d1;
-  height: 48px;
-  width: 48px;
+  border: 1px solid #b4aacd;
+  height: 49px;
+  width: 49px;
 }
 .grid-20x20{
   grid-template-columns: repeat(20,auto);
 }
 .grid-20x20>div{
-  border: 1px solid #ffa8d1;
-  height: 23px;
-  width: 24px;
+  border: 1px solid #b4aacd;
+  height: 24.5px;
+  width: 24.5px;
 }
 .grid-30x30{
   grid-template-columns: repeat(30,auto);
 }
 .grid-30x30>div{
-  border: 1px solid #ffa8d1;
-  width: 14px;
-  height: 14px;
+  border: 1px solid #b4aacd;
+  width: 16.3px;
+  height: 16.3px;
 }
-#gridDiv{
-  border: 1px solid #ffa8d1;
+/* #gridDiv{
+  border: 1px solid #392270;
   height: 48px;
   width: 49px;
-}
+} */
 
 .copyright{
   text-align: center;
